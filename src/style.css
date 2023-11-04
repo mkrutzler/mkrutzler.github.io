@@ -1,0 +1,62 @@
+body {
+    color: beige;
+    background: #423431;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+
+
+}
+
+h1, h2, h3 {
+
+    text-align: center;
+}
+
+a, a:visited{
+
+    color: #a15c38;
+    text-decoration: none;
+
+    transition: opacity 0.20s;
+
+}
+
+a:hover {
+
+    opacity: 0.7;
+    text-decoration: underline;
+
+
+
+}
+
+a:active {
+
+    opacity: 0.4;
+}
+
+.bottom-menu-heading{
+
+    text-align:center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.bottom-menu-links{
+
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.last-edited{
+
+    text-align: center;
+    font-size: x-small;
+}

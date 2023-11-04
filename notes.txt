@@ -1,0 +1,14 @@
+DONE:
+    There should be a contact, about and blog directory page.
+
+    Every page should contain the 4 main links: index (home), about, contact and blogs. => put it inside the template. 
+    Also template should have the style.css added. => I can change the style by editing one file only.
+
+    Style: find a beige-white background? + not the default font :skull:. It should be minimalist though. 
+    
+-----
+TODO:
+the blog directory is a list of all the available blogs. Blogs are in a subdir.
+Find out a way how to to query that subdir. Then have sorting algorithms. Maybe a random button.
+
+Also Blackmode?
