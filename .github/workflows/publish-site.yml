@@ -15,11 +15,14 @@ jobs:
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
 
+      - name: Add building permissions
+        run: chmod +x ./build.sh
+
       - name: Build the site
         run: ./build.sh
 
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
-	with:
-	  branch: gh-pages
-	  folder: public
+        with:
+          branch: gh-pages
+          folder: public
