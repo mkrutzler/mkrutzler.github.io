@@ -6,4 +6,5 @@
 
 * This is a first heading
 
-Here is some text that will be displayed
+Here is some text that will be displayed.
+Here is some more text for testing purposes.
