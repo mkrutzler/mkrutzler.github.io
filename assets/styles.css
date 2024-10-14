@@ -14,6 +14,7 @@ body {
  /* Style the tab */
  .tab {
     overflow: hidden;
+    background-color: darkgrey;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -23,6 +24,7 @@ body {
     border: 8px 8px 8px 8px black;
     cursor: pointer;
     padding: 4px 10px;
+    width: 25%;
     transition: 0.3s;
   }
   
