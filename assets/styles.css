@@ -14,7 +14,7 @@ body {
  /* Style the tab */
 .tab {
   overflow: hidden;
-  background-color: darkgrey;
+  background-color: lightgrey;
 }
   
   /* Style the buttons that are used to open the tab content */
@@ -24,7 +24,6 @@ body {
   border: 8px 8px 8px 8px black;
   cursor: pointer;
   padding: 4px 10px;
-  transition: 0.3s;
   width: 25%;
 
 }
@@ -37,6 +36,7 @@ body {
   /* Create an active/current tablink class */
 .tab button.active {
   background-color: lightgrey;
+  border-bottom: none;
 }
   
   /* Style the tab content */
