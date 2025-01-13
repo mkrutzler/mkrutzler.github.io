@@ -4,8 +4,7 @@ html {
 }
 
 body {
-    /*background-image: url(gifs/demo.gif);*/
-    /*background-size: 60px;*/
+    background-image: url(background.gif)
     color: black;
     margin-top: 100px;
     font-family: serif !important;
