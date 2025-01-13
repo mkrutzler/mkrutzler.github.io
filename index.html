@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-<!--
-color scheme: (light to dark, also see https://colorhunt.co/palette/eac696c8ae7d76582765451f)
-rgb(234, 198, 150)
-rgb(200, 174, 125)
-rgb(118, 88, 39)
-rgb(101, 69, 31)
--->
-
-
 <head>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <h1 style="text-align: center;">Home</h1>
-    <h3 class="links"><a href="/index.html">Home</a>  ||  <a href="/posts/index.html">Posts</a>  ||  <a href="/about.html">About</a></h3>
-    <p>Hello! This is the main landing page</p>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"><img src="home"></button>
+        <button class="tablinks" onclick="openTab(event, 'About Me')"><img src="about"></button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')"><img src="contact"></button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Some scrappy text</p>
+        <a href="posts.html">posts</a>
+    </div>
+
+    <div id="About Me" class="tabcontent">
+        <h3>About Me</h3>
+        <p>About me Section</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Actually clickable:</p>
+        <a href="mailto:mark.krutzler@icloud.com">Email</a>
+        <a href="https://github.com/mkrutzler/dots"></a>
+    </div>
+    <script src="assets/scripts.js"></script>
 </body>
 
 </html>

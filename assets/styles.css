@@ -1,39 +1,46 @@
 html {
-  margin:    0 auto;
-  max-width: 800px;
-  background-color: beige;
+    margin:    0 auto;
+    max-width: 800px;
 }
 
 body {
-  color: rgb(101, 69, 31);
-  margin-top: 100px;
-  font-family: serif !important;
-  background-color: rgb(234, 198, 150);
-  padding: 6px 12px;
+    /*background-image: url(gifs/demo.gif);*/
+    /*background-size: 60px;*/
+    color: black;
+    margin-top: 100px;
+    font-family: serif !important;
 }
 
-.links {
-  text-align: center;
-}
-
-a:link {
-  color: rgb(101, 69, 31);
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(118, 88, 39);
-
-}
-
-a:hover {
-  text-decoration: underline;
-  color: rgb(101, 69, 31);
-
-}
-
-a:active {
-  text-decoration: underline;
-  color: rgb(118, 88, 39);
-}
+ /* Style the tab */
+ .tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: lightgrey;
+    float: left;
+    border: 8px 8px 8px 8px black;
+    cursor: pointer;
+    padding: 4px 10px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: darkgrey;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: lightgrey;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    border-top: none;
+  }
