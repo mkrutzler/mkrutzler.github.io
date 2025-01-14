@@ -11,51 +11,78 @@ body {
     font-family: serif !important;
 }
 
- /* Style the tab */
- .tab {
+/* Style the tab */
+.tab {
     overflow: hidden;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
     background-color: lightgrey;
     float: left;
     border: 8px 8px 8px 8px black;
     cursor: pointer;
     padding: 4px 10px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
     background-color: darkgrey;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
     background-color: lightgrey;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+    font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid lightgrey;
     background-color: lightgrey;
     border-top: none;
-  }
+}
+
 * {box-sizing: border-box}
 
-/* Container needed to position the overlay. Adjust the width as needed */
 .img-container {
     position: relative;
-    width: 50%;
-    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.img-container img.expanded {
+    position: relative;
+    z-index: 1000;
+    transform: scale(2);
+    cursor: zoom-out;
+}
+.img-container .img-overlay.expanded {
+    position: absolute; /* Change to absolute positioning */
+    top: 145%; /* Move the caption further below the image */
+    bottom: auto;
+    background: rgba(229, 204, 225, 1);
+    opacity: 1;
+    width: 200%; /* Make the overlay wider */
+    left: 50%; /* Align the overlay in the middle */
+    transform: translateX(-50%); /* Center the overlay */
+    text-align: left;
+    margin-top: 0; /* Reset margin-top */
+    z-index: 1001; /* Ensure it is above other elements */
+    display: block; /* Ensure it is displayed as a block element */
+    border: 2px solid black; /* Add black outline */
 }
 
 /* Make the image responsive */
 .image {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: auto;
 }
@@ -71,6 +98,7 @@ body {
     font-size: 16px;
     padding: 5px;
     text-align: left;
+    border: 2px solid black; /* Add black outline */
 }
 
 /* When you mouse over the container, fade in the overlay title */
