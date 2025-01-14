@@ -44,3 +44,36 @@ body {
     background-color: lightgrey;
     border-top: none;
   }
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.img-container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+/* Make the image responsive */
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(229, 204, 225, 1); /* Black see-through */
+    color: black;
+    width: 100%;
+    opacity: 0;
+    font-size: 16px;
+    padding: 5px;
+    text-align: left;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.img-container:hover .img-overlay {
+    opacity: 1;
+}

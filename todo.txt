@@ -1,0 +1,4 @@
+- blog post about setup
+- upload larry
+- finish about.thml (books & music)
+- create home

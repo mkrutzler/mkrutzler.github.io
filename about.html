@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="location.href='index.html';">home</button>
+        <button class="tablinks" onclick="openTab(event, 'setup')" id="defaultOpen">setup</button>
+        <button class="tablinks" onclick="openTab(event, 'music')">music</button>
+        <button class="tablinks" onclick="openTab(event, 'books')">books</button>
+    </div>
+
+    <div id="setup" class="tabcontent">
+        <h3>my setup</h3>
+        <p>there will be a blog post about it in the future, because it is something that i think is pretty important</p>
+        <div class="img-container">
+            <img src="assets/img/setup.png" alt="mac-setup" class="image">
+            <div class="img-overlay">my basic setup<br> date 14. january 2025</div>
+        </div> 
+        <p>on one hand i don't really want to give the models, because that is not what matters, but on the other hand it is kinda part of it</p>
+        <p>the things i use:</p>
+        <ul>
+            <li>macbook air 13: late 2020 (m1)</li>
+            <li>logitech ergo m575</li>
+            <li>airpods pro & sony xm4 (headphones)</li>
+            <li>iphone</li>
+        </ul>
+    </div>
+    <!-- Tab content -->
+    <div id="music" class="tabcontent">
+        <h3>here is my music taste</h3>
+    </div>
+
+    <div id="books" class="tabcontent">
+        <h3>book recommendations</h3>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>
