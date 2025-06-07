@@ -8,24 +8,16 @@
 <body>
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="location.href='index.html';">back</button>
-        <button class="tablinks" onclick="openTab(event, 'post_index')" id="defaultOpen">post index</button>
-        <button class="tablinks" onclick="openTab(event, 'first_post')">first post</button>
-        <button class="tablinks" onclick="openTab(event, 'second_post')">second post</button>
+        <button class="tablinks" onclick="location.href='index.html';">home</button>
+        <button class="tablinks" onclick="location.href='posts.html';">blog</button>
+        <button class="tablinks" onclick="location.href='about.html';">about</button>
     </div>
 
-    <div id="post_index" class="tabcontent">
-        <h3>index of posts</h3>
-    </div>
-    <!-- Tab content -->
-    <div id="first_post" class="tabcontent">
-        <h3>first post</h3>
-        <p>first</p>
-    </div>
-
-    <div id="second_post" class="tabcontent">
-        <h3>second post</h3>
-        <p>second post</p>
+    <div class="tabcontent">
+        <h2>index of posts</h2>
+        <ul>
+            <li><a href="blog_first.html">First Blog</a></li>
+        </ul>
     </div>
     <script src="assets/scripts.js"></script>
 </body>

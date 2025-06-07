@@ -1,3 +1,1 @@
-- blog post about setup
- create home
-- der fremde blog
+- setup blog
